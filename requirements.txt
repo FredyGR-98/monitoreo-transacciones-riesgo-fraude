@@ -1,0 +1,14 @@
+# Dependencias principales para la API y el dashboard de monitoreo de fraude.
+# Se mantienen en un único archivo para facilitar ejecución local y construcción Docker.
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+streamlit
+imbalanced-learn
+joblib
+fastapi
+uvicorn
+pydantic
+requests

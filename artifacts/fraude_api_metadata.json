@@ -1,0 +1,47 @@
+{
+  "model_name": "random_forest_balanced_operativo",
+  "model_family": "RandomForestClassifier",
+  "scenario": "operativo_expandido",
+  "target": "isFraud",
+  "threshold_selected": 0.5,
+  "temporal_holdout_step_cutoff": 14,
+  "features_finales": [
+    "step",
+    "type",
+    "amount",
+    "oldbalanceOrg",
+    "oldbalanceDest",
+    "ratio_monto_saldo",
+    "flag_transfer",
+    "flag_monto_alto",
+    "regla_monto_alto_transfer",
+    "regla_ratio_alto"
+  ],
+  "features_excluidas_por_riesgo_operativo": [
+    "newbalanceOrig",
+    "newbalanceDest",
+    "flag_vaciamiento",
+    "diferencia_balance_origen",
+    "diferencia_balance_destino",
+    "regla_vaciamiento",
+    "regla_inconsistencia_balance",
+    "regla_multiples_senales",
+    "risk_score",
+    "cantidad_flags"
+  ],
+  "metricas_temporal_holdout": {
+    "precision": 1.0,
+    "recall": 0.875,
+    "f1_score": 0.9333333333333333,
+    "pr_auc": 0.8803960539804345,
+    "falsos_positivos": 0,
+    "fraudes_detectados": 35,
+    "fraudes_no_detectados": 5
+  },
+  "threshold_referencia_validacion": 0.613380815728661,
+  "notas": [
+    "Modelo seleccionado para API de portafolio con foco en realismo operativo.",
+    "Se excluyen variables posteriores a la transaccion y reglas derivadas de ellas.",
+    "El threshold 0.50 se deja como default estable; puede recalibrarse en produccion."
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  "step",
+  "type",
+  "amount",
+  "oldbalanceOrg",
+  "oldbalanceDest",
+  "ratio_monto_saldo",
+  "flag_transfer",
+  "flag_monto_alto",
+  "regla_monto_alto_transfer",
+  "regla_ratio_alto"
+]

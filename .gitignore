@@ -1,0 +1,47 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+.streamlit/secrets.toml
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Configuracion local
+.env
+.vscode/
+.idea/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Datos grandes o sensibles
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# Artefactos generados
+artifacts/figuras/*
+artifacts/reportes/*
+artifacts/metricas/*
+artifacts/output/*
+!artifacts/figuras/.gitkeep
+!artifacts/reportes/.gitkeep
+!artifacts/metricas/.gitkeep
+
+# Logs y salidas temporales
+*.log
+tmp/
+temp/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
